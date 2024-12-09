@@ -5,26 +5,26 @@ import emra2 from "../images/Emra2.png";
 const TurboTechnologyPage = () => {
   return (
     <div className="bg-[radial-gradient(ellipse_at_bottom,_var(--tw-gradient-stops))] from-black to-black text-white">
-      <div className="text-center ">
+      {/* Header Section */}
+      <div className="text-center px-6 py-10">
         <h1 className="text-4xl lg:text-6xl font-semibold bg-gradient-to-r from-blue-100 to-blue-900 bg-clip-text text-transparent pb-6">
-          Choose Your SolutionFor Emerging Businesses{" "}
+          Choose Your Solution For Emerging Businesses
         </h1>
         <p className="text-slate-300 text-base lg:text-lg">
           Propel your new age business forward with our Solutions.
         </p>
       </div>
-      <div className=" lg:flex px-10">
+
+      {/* Content Section */}
+      <div className="lg:flex lg:space-x-8 py-10 px-6 lg:px-10">
         {/* First Section */}
-        <div
-          className="bg-black text-white py-8 px-6 rounded-lg mx-auto shadow-[5px_12px_221px_82px_rgba(111,_15,_225,_0.33)]
-"
-        >
+        <div className="bg-black text-white py-8 px-6 rounded-lg shadow-[5px_12px_221px_82px_rgba(111,_15,_225,_0.33)] mb-10 lg:mb-0">
           {/* Image Section */}
           <div className="h-48 bg-gray-800 flex justify-center items-center rounded-lg">
             <img
               src={emra1}
               alt="Turbo Technology"
-              className="h-full w-full "
+              className="h-full w-full rounded-lg"
             />
           </div>
 
@@ -58,14 +58,13 @@ const TurboTechnologyPage = () => {
         </div>
 
         {/* Second Section */}
-
-        <div className="bg-black text-white py-8 px-6 rounded-lg mx-auto">
+        <div className="bg-black text-white py-8 px-6 rounded-lg shadow-lg">
           {/* Image Section */}
           <div className="h-48 bg-gray-800 flex justify-center items-center rounded-lg">
             <img
               src={emra2}
               alt="Turbo Technology"
-              className="h-full w-full "
+              className="h-full w-full rounded-lg"
             />
           </div>
 
@@ -93,7 +92,7 @@ const TurboTechnologyPage = () => {
             {/* Button */}
             <div className="mt-6 md:mt-0">
               <button className="bg-blue-600 text-white py-3 px-6 rounded-lg hover:bg-blue-700">
-                Accelerate with Plug & Play{" "}
+                Accelerate with Plug & Play
               </button>
             </div>
           </div>

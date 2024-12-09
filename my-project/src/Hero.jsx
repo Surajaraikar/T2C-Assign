@@ -16,9 +16,15 @@ import bridge from "./images/Tsbridge.png";
 import chain from "./images/pichainlogo.png";
 import ken2 from "./images/logo-dark.png";
 import optimile from "./images/optimile.png";
+import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Hero = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const navigate = useNavigate();
+  function handleClick(event) {
+    navigate("/about");
+  }
 
   return (
     <div>
@@ -45,22 +51,26 @@ const Hero = () => {
 
           {/* Navigation Links (Desktop) */}
           <div className="hidden lg:flex bg-black/80 text-white rounded-full px-6 py-2 space-x-4">
-            <a href="/home" className="hover:text-blue-400">
+            <a href="/" className="hover:text-blue-400">
               Home
             </a>
-            <a href="/about" className="hover:text-blue-400">
+            <a
+              href="/about"
+              onClick={handleClick}
+              className="hover:text-blue-400"
+            >
               About
             </a>
-            <a href="/services" className="hover:text-blue-400">
+            <a href="#" className="hover:text-blue-400">
               Services
             </a>
-            <a href="/blogs" className="hover:text-blue-400">
+            <a href="#" className="hover:text-blue-400">
               Blogs
             </a>
-            <a href="/news" className="hover:text-blue-400">
+            <a href="#" className="hover:text-blue-400">
               News
             </a>
-            <a href="/contact" className="hover:text-blue-400">
+            <a href="#" className="hover:text-blue-400">
               Contact
             </a>
           </div>

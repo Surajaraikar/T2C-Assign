@@ -5,7 +5,7 @@ import contact from "../images/contact.png";
 
 function Contact() {
   return (
-    <div className="bg-black pt-28 pb-28">
+    <div className="bg-black pt-16 pb-28">
       <div className="h-full flex flex-col items-center justify-center p-4">
         {/* Container for Side-by-Side Sections */}
         <div className="flex flex-col md:flex-row gap-8 max-w-6xl w-full p-7">

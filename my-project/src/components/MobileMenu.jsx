@@ -1,7 +1,12 @@
 import React from "react";
+import t2c from "../images/T2c.png";
+import { useNavigate } from "react-router-dom";
 
 const MobileMenu = ({ onClose }) => {
-  const menuItems = ["Home", "About Us", "Expertise", "Insight"];
+  const navigate = useNavigate();
+  function handleClick(event) {
+    navigate("/about");
+  }
 
   return (
     <div className="fixed inset-0 bg-black z-50">
@@ -9,18 +14,13 @@ const MobileMenu = ({ onClose }) => {
       <div className="flex justify-between items-center p-5">
         {/* Logo */}
         <div className="text-white font-bold text-lg flex items-center gap-2">
-          <span className="text-3xl font-extrabold">tc</span>
-          <span className="text-sm leading-5">
-            Start
-            <br />
-            Big.
-          </span>
+          <img src={t2c} alt="t2c" className="w-32" />
         </div>
 
         {/* Close Button */}
         <button
           onClick={onClose} // Close menu
-          className="text-white text-2xl focus:outline-none"
+          className="text-white text-5xl focus:outline-none"
         >
           &times;
         </button>
@@ -28,14 +28,14 @@ const MobileMenu = ({ onClose }) => {
 
       {/* Menu Items */}
       <div className="mt-10 px-5 space-y-6">
-        {menuItems.map((item, index) => (
-          <div
-            key={index}
-            className="text-white text-lg font-medium border-b border-gray-700 pb-3"
-          >
-            {item}
-          </div>
-        ))}
+        <div className="text-white text-lg font-medium border-b border-gray-700 pb-3 flex flex-col gap-10">
+          <a href="/" onClick={handleClick}>
+            Home
+          </a>
+          <a href="/about">About Us</a>
+          <a href="#">Expertise</a>
+          <a href="#">Insight</a>
+        </div>
       </div>
 
       {/* Get Started Button */}
