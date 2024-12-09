@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.link:hover .hover-rotate {
+  transform: rotate(-45deg);
+}
+
+
+.png {
+  background: url('https://s3-alpha-sig.figma.com/img/ec02/94f8/5225e24541871402523696a62b4772ca?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aT6FfCNOPek4qqnHAvlNhiVWoGJXIuFtNE~CRz3VEYGiObM4XsuW-yG7VnR5KMRXn-UmSrkCWu5YqMi4gXYLQDL0YjYLvNySnKYJuTJSgfF6yxqN68zhWqy6TUtcg7RdXiFEY2SZExabUq9sA0qK7cMP0GAQ3AdGQohgcRhgrWvNxdvONBUmuZSkoAOCCJm907kVyUGLIyTdLBuUnZr9csiq-GlivD9hA89kvmlUNQfADimPxJ-mynoXHAIpFmi0tWMW0-2pXsGuPZ5Bj0O8aVsmC-K8Wq4IeObJrp7HH3E3NhiY7gUad7v~4lh71n7O~flqC5enDEhDfLNhtp7rEA__');
+}
+
+.back{
+  background: url('C:\Users\suraj\Desktop\New folder\suraj\src\images\Background.png');
+}
