@@ -1,5 +1,5 @@
 import React from "react";
-import t2c from "../images/T2c.png";
+import t2c from "../images/T2C.png";
 import { useNavigate } from "react-router-dom";
 
 const MobileMenu = ({ onClose }) => {
