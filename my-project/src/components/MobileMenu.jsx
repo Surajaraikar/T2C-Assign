@@ -1,13 +1,8 @@
 import React from "react";
-import t2c from "../images/T2c.png";
-import { useNavigate } from "react-router-dom";
+import t2c from "../images/T2C.png";
+import { Link } from "react-router-dom";
 
 const MobileMenu = ({ onClose }) => {
-  const navigate = useNavigate();
-  function handleClick(event) {
-    navigate("/about");
-  }
-
   return (
     <div className="fixed inset-0 bg-black z-50">
       {/* Header with Logo and Close Button */}
@@ -29,10 +24,8 @@ const MobileMenu = ({ onClose }) => {
       {/* Menu Items */}
       <div className="mt-10 px-5 space-y-6">
         <div className="text-white text-lg font-medium border-b border-gray-700 pb-3 flex flex-col gap-10">
-          <a href="/" onClick={handleClick}>
-            Home
-          </a>
-          <a href="/about">About Us</a>
+          <Link to="/">Home</Link>
+          <Link to="/about">About Us</Link>
           <a href="#">Expertise</a>
           <a href="#">Insight</a>
         </div>

@@ -7,14 +7,9 @@ import t2c from "./images/T2C.png";
 import Back from "./images/Background.svg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { useNavigate } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 const AchieveAndMission = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle mobile menu
-  const navigate = useNavigate();
-  function handleClick(event) {
-    navigate("/");
-  }
 
   return (
     <div className="relative">
@@ -42,16 +37,12 @@ const AchieveAndMission = () => {
 
         {/* Navigation Links (Desktop) */}
         <div className="hidden lg:flex bg-black/80 text-white rounded-full px-6 py-2 space-x-4">
-          <a href="/" className="hover:text-blue-400">
+          <Link to="/" className="hover:text-blue-400">
             Home
-          </a>
-          <a
-            href="/about"
-            onClick={handleClick}
-            className="hover:text-blue-400"
-          >
+          </Link>
+          <Link to="/about" className="hover:text-blue-400">
             About
-          </a>
+          </Link>
           <a href="#" className="hover:text-blue-400">
             Services
           </a>
