@@ -1,6 +1,5 @@
 import React from "react";
 import t2c from "../images/T2C.png";
-<<<<<<< HEAD
 import { Link } from "react-router-dom";
 
 const MobileMenu = ({ onClose }) => {
